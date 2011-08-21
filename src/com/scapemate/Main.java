@@ -7,9 +7,7 @@ import javax.swing.WindowConstants;
 import com.scapemate.runescape.loader.ParameterLoader;
 import com.scapemate.ui.ScapeMateFrame;
 
-public class Main {	
-	private static ScapeMateFrame frame;
-	
+public class Main {
 	/**
 	 * @param args program arguments
 	 * @throws IOException 
@@ -17,13 +15,9 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		ParameterLoader.parse(); 
 		
-		frame = new ScapeMateFrame();
+		ScapeMateFrame frame = new ScapeMateFrame();
 		frame.load();
 		frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 		frame.setVisible(true);
-	}
-	
-	public static ScapeMateFrame getScapeMateFrame() {
-		return frame;
 	}
 }
