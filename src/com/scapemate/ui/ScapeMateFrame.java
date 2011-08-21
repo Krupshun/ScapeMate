@@ -4,7 +4,7 @@ import java.applet.Applet;
 
 import javax.swing.JFrame;
 
-import com.scapemate.loader.ScapeMateAppletLoader;
+import com.scapemate.runescape.loader.AppletLoader;
 
 public class ScapeMateFrame extends JFrame {
 	private Applet applet;
@@ -14,7 +14,7 @@ public class ScapeMateFrame extends JFrame {
 	}
 	
 	public void load() {
-		ScapeMateAppletLoader loader = new ScapeMateAppletLoader();
+		AppletLoader loader = new AppletLoader();
 		
 		applet = loader.getRuneScapeApplet();
 		

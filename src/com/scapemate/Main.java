@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import javax.swing.WindowConstants;
 
-import com.scapemate.loader.ParameterLoader;
+import com.scapemate.runescape.loader.ParameterLoader;
 import com.scapemate.ui.ScapeMateFrame;
 
 public class Main {	
